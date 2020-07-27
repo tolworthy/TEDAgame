@@ -1,0 +1,2 @@
+beds and baths are saved as doors: the easiest way to guarantee just one object.
+

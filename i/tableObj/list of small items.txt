@@ -1,0 +1,42 @@
+fish tank
+chipped plaster
+clock
+hourglass
+sign
+
+---on table:
+jugs
+plates
+bowls
+cups
+candelabras
+fruit (if rich)
+
+---on/near fireplace:
+fire
+spit
+food on spit
+companion set
+coal scuttle
+
+--on beams
+ropes
+hooks
+hanging bags
+webs
+
+--on desk
+ink and quill pen
+gavel (in court)
+book (e.g. accounts)
+bell (in shop)
+
+-- lab (on shelf or table)
+test tube apparatus
+electrical apparatus
+
+-- on shelves
+books
+bottles
+plates and glasses
+

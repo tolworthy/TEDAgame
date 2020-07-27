@@ -1,0 +1,1 @@
+images are scaled by HEIGHT. default = very large apple. Have them LYING DOWN.

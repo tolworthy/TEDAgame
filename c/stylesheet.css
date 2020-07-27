@@ -1,0 +1,111 @@
+img{position:absolute;}  /* bug fix: otherwise <10px images are offset */
+body{font-family: Arial, Helvetica, sans-serif; font-size:130%; height:100%; margin:0px; padding:0px; overflow:hidden; }
+
+
+.b {font-weight:bold}
+.bold{font-weight:bold;}
+.borderRed {border: 2px solid red;} /* for inner border: border: 3px solid #f00; outline: 1px dashed #0f0; outline-offset: -10px;  */
+.border {border: 2px solid blue;}
+.center{text-align:center}
+.centerDiv{position: fixed; top: 50%; left: 50%;  transform: translate(-50%, -50%);}
+.faint {opacity:0.5}
+.hide{display: none;}
+.i {font-style:italic}
+.large {font-size:120%}
+.larger {font-size:150%}
+.normal{font-weight:normal;}
+.opacity0{opacity:0;}
+.o40{opacity:0.4;} /* used by bookmarks  */
+.o1{opacity:1;}
+.outline {color: black; text-shadow: 2px 2px 0 #999, -1px -1px 0 #999, 1px -1px 0 #999, -1px 1px 0 #999, 1px 1px 0 #999}
+.show{display: inline;}
+.small {font-size:80%}
+.smaller {font-size:75%}
+.visible{visibility:visible;}
+
+
+.mapSelected {z-index:10000; border: 4px solid yellow;}
+.mapMarker {z-index:3; width:42px; height:90px; top:50%; left:50%; pointer-events: none;}
+.game {position:absolute; top:0; left:0; width:99%; height:99%; overflow:hidden; text-align:left; }
+.map {position:absolute; top:0; left:0; width:100%; height:100%; overflow:hidden; text-align:left; }
+.mapTile {position:absolute; width:4%; height:8%; overflow:hidden; text-align:center; font-size: 60%}
+.mapLabel {position:absolute; font-size:90%; overflow:visible; line-height: 80%; text-indent: -7px;
+    color: white; text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000}
+.visited {position:absolute; display:none; background-color:white; border: 2px solid black; padding:8px;}
+
+
+.pic {position:absolute; display:inline-block; overflow:visible; text-align:center;}
+.inventoryPic {width:15%; height:15%;}
+.NSEW {z-index:1001; width:6%; height:6%; left:-999px; top:50%; opacity:0.5}
+.floor {left:0; width:100%; z-index:2}
+.ceiling {top:25%; height:4%; z-index:2}
+.streetSign{position:absolute;left:3%;top:32%;z-index:17;font-size:90%;color:#666;
+    background-image:url("");background-size:100% 100%;
+    padding-left: 15px;padding-right: 15px;padding-top: 7px;padding-bottom: 7px;
+    font-family:'Love Ya Like A Sister', sans-serif; white-space:nowrap; }/* nowrap means no wrapping long names unless I specify <br/> */
+.strangerChat{position:absolute; left:50%; width:12%; text-align:center; z-index:101;font-size:90%;font-weight:bold; color: #663333;opacity:0.85;
+    text-shadow: -2px -2px 0 white, 2px -2px 0 white, 2px 2px white, -2px 2px 0 white; display: none;}
+
+.person {position:absolute; display:inline-block; overflow:hidden; border-width:0;  background-repeat:no-repeat;  background-size:auto;}
+.strangerZ {z-index:94;} /* other people */
+.frontOfPic {z-Index:200;} /* river he drowns in: most scene objects end at z=100. tableObjs: z=130 */
+
+.notifyLineStart {position:absolute; top:10%; left:1.5%;}
+.historyItem{position:relative; left:35px;}
+.smallBookmark{width:20px;height:20px;}
+.yesBox{z-index:1040; padding:1%; background-color:white; border-width:14px; border-style:outset; overflow:scroll; text-align:center; display:none; position:fixed;}
+
+.notifyLineRemove {opacity:0; position:absolute; top:10%; left:-80%; animation-name: removeLeft; animation-timing-function:ease-in; animation-duration: 4s; }
+@keyframes removeLeft {  0%   {left:1.5%; opacity:0.8;} 100%  {left:-30%; opacity:0;} }
+.fadeIn {opacity:1; animation-name: fadeIn; animation-duration: 6s;}
+@keyframes fadeIn {  0%  {opacity: 0;}  100%  {opacity: 1;}}
+.quickFadeOut {opacity:0; animation-name: quickFadeOut; animation-duration: 2s;}
+@keyframes quickFadeOut {  0%  {opacity: 0;} 20%,50%  {opacity: 0.6;}  100%  {opacity: 0;}}
+.video {position:absolute; top:25%; left:0%; display:none; }
+@keyframes vidEnd { 0%,100% { opacity: 0 } 10%,90% { opacity: 0.9 }}
+
+
+/* ----------------- title ----------------------- */
+
+@keyframes storyTitleAnimate {
+    0%   {opacity: 0;}
+    25%  {opacity: 1;}
+    60%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+.storyTitleAnimate{ animation-name: storyTitleAnimate; /* separate class so it can be added as needed */
+    animation-duration:10s; }
+.storyTitle{
+    position:absolute; top:0; left:0;	width: 100%;  height: 100%;
+    background-image: url("i/titleStripe.png");
+	background-size:100% 100%;
+	/* opacity: 0; */   }
+.storyTitle0{	bottom:56%;z-index:2;}
+.storyTitle1{	top:43%;z-index:3;}
+.storyTitleSmall {	font-size: 3.5vw;}
+.storyTitleBig {	font-size: 7vw;}
+.storyTitleBigger {	font-size: 9vw;}
+.storyTitle3D {	z-index:2;	width: 100%;	position:absolute;
+	margin: 0 auto 0 auto;
+  font-family: 'Diplomata', cursive;
+	font-weight:bold;	text-align: center;
+	text-transform: uppercase;
+	text-rendering: optimizeLegibility;
+}
+.shadow{
+    color: #70869d;    letter-spacing: .15em;    text-shadow:
+      -1px -1px 1px #efede3,       0px 1px 0 #2e2e2e,
+      0px 2px 0 #2c2c2c,       0px 3px 0 #2a2a2a,       0px 4px 0 #282828,      0px 5px 0 #262626,
+      0px 6px 0 #242424,       0px 7px 0 #222,       0px 8px 0 #202020,       0px 9px 0 #1e1e1e,
+      0px 10px 0 #1c1c1c,       0px 11px 0 #1a1a1a,       0px 12px 0 #181818,       0px 13px 0 #161616,
+      0px 14px 0 #141414,       0px 15px 0 #121212,
+      2px 20px 5px rgba(0, 0, 0, 0.9), 5px 23px 5px rgba(0, 0, 0, 0.3),
+      8px 27px 8px rgba(0, 0, 0, 0.5),   8px 28px 35px rgba(0, 0, 0, 0.9);
+ }
+/* Title CSS adapted from code copyright (c) 2020 by Jérôme Van Overbeke (https://codepen.io/jeromevanoverbeke/pen/wfzIq)
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+
+

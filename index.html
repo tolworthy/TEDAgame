@@ -1,0 +1,228 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"/>
+<title>TEDAGAME: The Endless Do Anything Game</title>
+<link rel="stylesheet" type="text/css" href="c/stylesheet.css">
+
+<!-- <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister" rel="stylesheet"><!--street signs, writing in game-->
+<!-- <link href="https://fonts.googleapis.com/css?family=Diplomata" rel="stylesheet"><!-- storyTitle-->
+
+
+</head>
+<body> <!-- Z1:game,  1000:textBox,  1001-3:icons,notifyLine,  1010:map,  1020:notifyBox,  1030:health,  1042:yesCancel,  2000:title,  2001:logo  -->
+
+<div id='game' class='game' style='z-index:1; width:100%; height:100%; position:absolute;'> <!-- 25% text, 50% wall(and ceiling), 25% floor -->
+        <!-- icons -->
+        <img src="c/i/logo-fat.png" id="logo" class="pic" style="left:0.5%; width:15%; top:0.5%; height:6%; z-index:2001;" onclick="javascript:TEDAgame()">
+        <img src="c/i/history-icon.png" id="history-icon" class="pic" style="left:19.5%;top:0.5%; width:2.5%;height:4%;z-index:1002;" onclick="javascript:notify('showHistory')">
+        <div id="history-box" style="left:21.7%;top:0.4%; width:78%;height:3.4%; z-index:1001; display:inline-block; position:absolute; background-color:rgb(185, 185, 185); padding-top:0.4%; overflow:hidden;">
+            <div id="notifyLine-default" style="color:rgb(105, 105, 105); z-index:1002;"><b>T</b>he <b>E</b>ndless <b>D</b>o <b>A</b>nything game</div>
+            <div id="notifyLine" style="color:rgb(0, 0, 0); z-index:1003;"></div>
+        </div>
+        <img src="c/i/map-icon.png" class="pic" style="right:0%; width:10%; top:0%; height:9%;  z-index:1002;" onclick="javascript:map('showWorldMap')">
+        <img src="c/i/music-icon.png" id="music-icon" class="pic" style="right:0%; bottom:73.5%; width:3.5%; height:7%;  z-index:1001; opacity:0.7;" onclick="javascript:playMusic()"><
+        <img src="c/i/help-icon.png" id="help-icon" class="pic" style="right:0.5%; bottom:0.5%; width:4.5%; height:8%;  z-index:1001;" onclick="javascript:help()"><
+
+        <!-- dialogue -->
+        <div id="textBox" style="z-index:1000; position:absolute; left:0; top:0; width:100%; height:25%; overflow:visible; text-align:center;background-color:white; opacity:0.7"><!-- AFTER TESTING: remove opacity -->
+            <div id="text" style="font-size:130%; width:100%; position:absolute; overflow:visible; top:30%">
+                How many <b>chairs</b> can you find?
+                </div>
+        </div>
+        <div id="lineToSpeaker" style="z-index:1000; position:absolute; left:50%; top:22%; width:50%; height:4px;transform-origin: 0 0; opacity:0;"></div>
+
+        <!-- N S E W -->
+        <img src="c/i/w0.png" id="direction0" class="pic NSEW" onclick="javascript:clickOn('door0')"><br/> <!-- position 0 by default, but can move -->
+        <img src="c/i/n1.png" id="direction1" class="pic NSEW" onclick="javascript:clickOn('door1')"><br/>
+        <img src="c/i/e2.png" id="direction2" class="pic NSEW" onclick="javascript:clickOn('door2')"><br/>
+        <img src="c/i/s3.png" id="direction3" class="pic NSEW" onclick="javascript:clickOn('door3')"><br/>
+        <div id="scoreBox" class ="b" style="z-index:1001; position:absolute; left:0.5%; bottom:-1%; text-align:right;" onclick="javascript:health('toggle')">
+            <span class="b" style="position:relative; top:-12px; right:0; font-size:88%">SCORE&nbsp;</span>
+            <span id="score" style="font-size:400%; position:relative; right:0">0</span>
+        </div>
+
+        <!-- test -->
+        <div id="test-data" class ="small" style="z-index:1009; position:absolute; left:1%; width: 98%; top:13.5%;">
+            <div id="game-data"></div>
+
+            <a href="javascript:TEST('toggleClock')"><span id="clock message" class="b">START CLOCK</span></a> <span id="clock-data">0</span> -
+            <a href="javascript:TEST('autoScene')"><span id="autoScene">autoScene</span></a> |
+            <a href="javascript:TEST(' lounge ')">lounge</a> |
+            <a href="javascript:TEST(' kitchen ')">kitchen</a> |
+            <a href="javascript:TEST(' bathroom ')">bathroom</a> |
+            <a href="javascript:TEST(' bedroom ')">bedroom</a> . . . . .
+            <a href="javascript:TEST('orientNorth')">oriented North (for coast)</a> -
+            <a href="javascript:TEST('orientSouth')">S</a> -
+            <a href="javascript:TEST('orientEast')">E</a> -
+            <a href="javascript:TEST('orientWest')">W</a><br/>
+
+            <a href="javascript:TEST(' govt ')">govt</a> |
+            <a href="javascript:TEST(' city ')">city</a> |
+            <a href="javascript:TEST(' town ')">town</a> |
+            <a href="javascript:TEST(' village ')">village</a> |
+            <a href="javascript:TEST(' countryside ')">countryside</a> |
+            <a href="javascript:TEST(' forest ')">forest</a> |
+            <a href="javascript:TEST(' mountains ')">mountains</a> |
+            <a href="javascript:TEST(' wilderness ')">wilderness</a> |
+            <a href="javascript:TEST(' desert ')">desert</a> |
+            <a href="javascript:TEST(' sea ')">sea</a> |
+            <a href="javascript:TEST(' tunnel ')">tunnel</a> |
+            <a href="javascript:TEST(' cave ')">cave</a> |
+            <a href="javascript:TEST(' alien ')">alien</a> |
+            <a href="javascript:TEST(' tent ')">tent</a> |
+            <a href="javascript:TEST(' ship ')">ship</a> |
+            <a href="javascript:TEST(' coast ')">coast</a><br/>
+
+            <a href="javascript:TEST('north1')">N</a> |
+            <a href="javascript:TEST('south1')">S</a> |
+            <a href="javascript:TEST('east1')">E</a> |
+            <a href="javascript:TEST('west1')">W</a> |
+            <a href="javascript:TEST('north10')">N10 (1 outside scene)</a> |
+            <a href="javascript:TEST('south10')">S10</a> |
+            <a href="javascript:TEST('east10')">E10</a> |
+            <a href="javascript:TEST('west10')">W10</a> |
+            <a href="javascript:TEST('north100')">N100</a> |
+            <a href="javascript:TEST('south100')">S100</a> |
+            <a href="javascript:TEST('east100')">E100</a> |
+            <a href="javascript:TEST('west100')">W100</a> |
+            <a href="javascript:TEST('north1000')">N1000 (1 map pixel)</a> -
+            <a href="javascript:TEST('south1000')">S1000</a> -
+            <a href="javascript:TEST('east1000')">E1000</a> -
+            <a href="javascript:TEST('west1000')">W1000</a><br/>
+
+            <a href="javascript:TEST('nextPerson')">person++</a> |
+            <a href="javascript:TEST('next10person')">+10</a> |
+            <a href="javascript:TEST('previousPerson')">person--</a> |
+            <a href="javascript:TEST('previous10person')">-10</a> |
+            <a href="javascript:TEST('climbUpHouse')">Climb up house</a> |
+            <a href="javascript:TEST('climbDownHouse')">down</a> |
+            <a href="javascript:TEST('zMinus2')">Z-2</a> |
+            <a href="javascript:TEST('zMinus20')">Z-20</a> |
+            <a href="javascript:TEST('zPlus2')">Z+2</a> |
+            <a href="javascript:TEST('zPlus20')">Z+20</a> |
+            <a href="javascript:TEST('reach')">reach</a> |
+            <a href="javascript:TEST('dance')">dance</a> |
+            <a href="javascript:TEST('video')">video</a> |
+            <a href="javascript:TEST('gameEnd')">gameEnd</a> |
+            <a href="javascript:TEST('offerStory')">offerStory</a> |
+            <a href="javascript:TEST('testNeeds')">testNeeds</a>
+            </div>
+
+         <div id="strangerChat" class ="strangerChat">bla bla bla bla bla bla bla bla bla bla bla bla
+        </div>
+    <div id="sceneChange" style="background-color:grey; position:absolute; top:0; width:100%; height:100%;"> <!-- for hiding during DOM change -->
+    <div id="scene"> <!-- for hiding during DOM change -->
+        <!-- backgrounds -->
+            <img id="wall"    class="pic" src="" onclick="javascript:clickOn('wall')">
+            <img id="floor"   class="pic floor"   src="" onclick="javascript:clickOn('floor')">
+            <img id="ceiling" class="pic ceiling" src="" onclick="javascript:clickOn('ceiling')">
+        <!-- high on walls -->
+            <img id="wallObj0" class="pic" src="" onclick="javascript:clickOn('wallObj0')">
+            <img id="wallObj1" class="pic" src="" onclick="javascript:clickOn('wallObj1')">
+            <img id="wallObj2" class="pic" src="" onclick="javascript:clickOn('wallObj2')">
+        <!-- doors     WEST - NORTH - EAST - SOUTH -->
+            <img id="door0"  class="pic" src="" onclick="javascript:clickOn('door0')">
+            <img id="door1"  class="pic" src="" onclick="javascript:clickOn('door1')">
+            <img id="door2"  class="pic" src="" onclick="javascript:clickOn('door2')">
+            <img id="door3"  class="pic" src="" onclick="javascript:clickOn('door3')">
+            <img id="signFixing" class="pic" src=""><div id="streetSign" class="streetSign"></div>
+        <!-- chairs etc -->
+            <img id="floorObj0" class="pic" src="" onclick="javascript:clickOn('floorObj0')">
+            <img id="floorObj1" class="pic" src="" onclick="javascript:clickOn('floorObj1')">
+            <img id="floorObj2" class="pic" src="" onclick="javascript:clickOn('floorObj2')">
+            <img id="floorObj3" class="pic" src="" onclick="javascript:clickOn('floorObj3')">
+        <!-- PEOPLE OR GROUPS -->
+            <div id="person0" onclick="javascript:clickOn('person0')"></div> <!-- class is set in loadScene > addPerson > changeDOM -->
+            <div id="person1" onclick="javascript:clickOn('person1')"></div>
+            <div id="person2" onclick="javascript:clickOn('person2')"></div>
+            <div id="person3" onclick="javascript:clickOn('person3')"></div>
+        <!-- tables etc -->
+            <img id="table0" class="pic" src="" onclick="javascript:clickOn('table0')">
+            <img id="table1" class="pic" src="" onclick="javascript:clickOn('table1')">
+        <!-- items on tables -->
+            <img id="tableObj0" class="pic" src="" onclick="javascript:clickOn('tableObj0')">
+            <img id="tableObj1" class="pic" src="" onclick="javascript:clickOn('tableObj1')">
+            <img id="tableObj2" class="pic" src="" onclick="javascript:clickOn('tableObj2')">
+            <img id="tableObj3" class="pic" src="" onclick="javascript:clickOn('tableObj3')">
+            <img id="tableObj4" class="pic" src="" onclick="javascript:clickOn('tableObj4')">
+            <img id="tableObj5" class="pic" src="" onclick="javascript:clickOn('tableObj5')">
+        <!-- very bottom, e.g. river that covers feet -->
+            <img id="veryBottom" class="pic frontOfPic" src="" onclick="javascript:clickOn('veryBottom')">
+            <div id="videoDiv" class="video" style="display:none; " onclick="javascript:video('off')">
+                <video id="video" autoplay loop></video></div> <!-- "source" is created and appended in javascript -->
+            <img id="preloadOffscreen" style="left:110%; width:2px; height:2px;" src="">
+        </div><!-- scene -->
+    </div><!-- sceneChange-->
+
+   <!-- map -->
+    <div id="mapContainer" class='map' style="z-index:1010; display:none; background-color:#1A3358;"><!-- here purely to cover the background with blue -->
+            <div id="worldMap" class='map' style="z-index:1;"><!-- for resizing map plus labels -->
+                <img id="mapGif" src="" class="pic" style="z-index:2; width:100%;"  onclick="javascript:map('clickOnMap')">
+                <img id="map-marker" src="c/i/map-marker.png" class="pic mapMarker">
+                <img id="map-target" src="c/i/map-target.png" class="pic mapMarker">
+                <div id="mapLabels" style="position:absolute; left:0;top:0; z-index:4;"></div>
+            </div>
+            <img id="map-up" class='pic' style="z-index:3; width:7%; height:7%; left:45%; top:0;" src="c/i/arrow-up.png" onclick="javascript:map('up')">
+            <img id="map-down" class='pic' style="z-index:3; width:7%; height:7%; left:45%; bottom:0;" src="c/i/arrow-down.png" onclick="javascript:map('down')">
+            <img id="map-left" class='pic' style="z-index:3; width:5%; height:9%; left:0%; top:45%;" src="c/i/arrow-left.png" onclick="javascript:map('left')">
+            <img id="map-right" class='pic' style="z-index:3; width:5%; height:9%; right:0%; top:45%;" src="c/i/arrow-right.png" onclick="javascript:map('right')">
+            <img id="map-X" class='pic' style="z-index:3; width:5%; height:7%; right:0; top:0;" src="c/i/X.png" onclick="javascript:map('off')">
+            <img id="map-zoomin" class='pic' style="display:none; z-index:3; width:5%; height:9%; right:0; bottom:0;" src="c/i/zoom-in.png" onclick="javascript:map('zoomin')">
+            <img id="map-zoomout" class='pic' style="display:none; z-index:3; width:5%; height:9%; right:7%; bottom:0;" src="c/i/zoom-out.png" onclick="javascript:map('zoomout')">
+    </div><!-- mapContainer -->
+
+    <!-- messages -->
+    <div id="notifyBox" style="z-index:1020; position:absolute; top:5%; left:5%;width:88%; max-height:88%; padding:1%; background-color:white; border-width:14px; border-style:outset; overflow:scroll; display:none;">
+        <img id="notify-X" class='pic' style="z-index:3; width:5%;height:30px; right:0;top:0;" src="c/i/X.png" onclick="javascript:notify('off')">
+        <img id="bookmark" class='o1' style="z-index:3; width:5%;height:30px; left:0;top:0;" src="c/i/bookmark-icon.png" onclick="javascript:notify('bookmark')">
+        <div id="notifyTitle" style="font-size:130%; height:1.1em; font-weight: bold; text-align:center;">title</div>
+        <div id="notify"></div>
+    </div>
+
+    <!-- health -->
+    <div id="healthBox" style="z-index:1030; position:absolute; top:8%; left:5%;width:88%; max-height:88%; padding:1%; background-color:white; border-width:14px; border-style:outset; overflow:scroll; display:none">
+        <img id="health-X" class='pic' style="z-index:3; width:5%;height:30px; right:0;top:0;" src="c/i/X.png" onclick="javascript:health('off')">
+        <div id="heroName" class="large b">Character name</div>
+        <div>score: <span id="heroScore">0</span></div>
+        <div>money: $<span id="heroMoney" class='b'>0</span></div>
+        <div id="undergroundStats" class="show">
+                <div>underground: <span id="timeUnderground">0 hours</span></div>
+                <div>food + water: <span id="foodAndWater">1 day</span> remaining</div>
+        </div>
+        <div id="inventory"></div>
+    </div>
+
+    <!-- yes/cancel -->
+    <img id="circleOnMapClick" src="c/i/small-red-circle.png" style="z-index:1041; position: absolute; display: none;"></img>
+    <div id="yesCancel" class="yesBox" style="z-index:1042; text-align:center">
+        <div id="yesCancelText">yes/cancel description not yet set.</div>
+        <br/><button onclick="clickYes()">YES</button> <button onclick="nav.removeYesCancel()">cancel</button>
+    </div>
+
+    <!-- title  -->
+    <div id="storyTitle" class="hide" style="z-index:2000" onclick="javascript:storyTitleOff()">
+        <div id="storyTitle0"></div>
+        <div id="storyTitle1"></div>
+    </div>
+
+</div><!-- game -->
+
+<audio id="audio">
+	<source id="oggSource" src="" type="audio/ogg"></source>
+	<source id="mp3Source" src="" type="audio/mpeg"></source>
+	Your browser does not support the audio element.
+</audio>
+
+
+<script src='c/0-variables_0.js'></script>
+</body>
+<!-- TEDAgame is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    For a copy of the GNU General Public License, see <https://www.gnu.org/licenses/>.-->
+</html>
