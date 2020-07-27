@@ -12,15 +12,15 @@ Early version: http://www.tedagame.com/_NEW/
 
 [Headers](#headers)  
 
-###### Project overview
-[ How TEDAgame began](#how-tedagame-began-1)
-###### The road map
-###### What we need
-###### Can you draw?
-###### The biggest game in the world?
-###### Change the world
-###### Make money
-###### Code overview
+[Project overview](https://github.com/tolworthy/TEDAgame/blob/master/README.md#project-overview-1)
+[How TEDAgame began](https://github.com/tolworthy/TEDAgame/blob/master/README.md#how-tedagame-began-1)
+[The road map](https://github.com/tolworthy/TEDAgame/blob/master/README.md#the-road-map-1)
+[What we need](https://github.com/tolworthy/TEDAgame/blob/master/README.md#what-we-need-1)
+[Can you draw?](https://github.com/tolworthy/TEDAgame/blob/master/README.md#can-you-draw-1)
+[The biggest game in the world?](https://github.com/tolworthy/TEDAgame/blob/master/README.md#the-biggest-game-in-the-world-1)
+[Change the world](https://github.com/tolworthy/TEDAgame/blob/master/README.md#change-the-world-1)
+[Make money](https://github.com/tolworthy/TEDAgame/blob/master/README.md#make-money-1)
+[Code overview](https://github.com/tolworthy/TEDAgame/blob/master/README.md#code-overview-1)
 
 ![TEDAgame map](http://www.tedagame.com/other/game-map.jpg)
 
