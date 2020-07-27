@@ -10,15 +10,15 @@ Early version: http://www.tedagame.com/_NEW/
 
 ## CONTENTS
 
-Project overview
-How TEDAgame began
-The road map
-What we need
-Can you draw?
-The biggest game in the world?
-Change the world
-Make money
-Code overview
+###### Project overview
+###### How TEDAgame began
+###### The road map
+###### What we need
+###### Can you draw?
+###### The biggest game in the world?
+###### Change the world
+###### Make money
+###### Code overview
 
 ![TEDAgame map](http://www.tedagame.com/other/game-map.jpg)
 
