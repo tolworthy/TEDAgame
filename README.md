@@ -1,9 +1,10 @@
 # TEDAgame  (The Endless Do Anything Game)
 
-Why help with TEDAgame ? 
 1. Change the world
 2. Make money
 3. Have fun creating anything you can imagine!
+
+![TEDAgame screenshot](http://www.tedagame.com/other/game-pic.jpg)
 
 Early version: http://www.tedagame.com/_NEW/
 
@@ -19,6 +20,7 @@ Change the world
 Make money
 Code overview
 
+![TEDAgame map](http://www.tedagame.com/other/game-map.jpg)
 
 ## PROJECT OVERVIEW
 
