@@ -13,13 +13,21 @@ Early version: http://www.tedagame.com/_NEW/
 [Headers](#headers)  
 
 [Project overview](https://github.com/tolworthy/TEDAgame/blob/master/README.md#project-overview-1)
+
 [How TEDAgame began](https://github.com/tolworthy/TEDAgame/blob/master/README.md#how-tedagame-began-1)
+
 [The road map](https://github.com/tolworthy/TEDAgame/blob/master/README.md#the-road-map-1)
+
 [What we need](https://github.com/tolworthy/TEDAgame/blob/master/README.md#what-we-need-1)
+
 [Can you draw?](https://github.com/tolworthy/TEDAgame/blob/master/README.md#can-you-draw-1)
+
 [The biggest game in the world?](https://github.com/tolworthy/TEDAgame/blob/master/README.md#the-biggest-game-in-the-world-1)
+
 [Change the world](https://github.com/tolworthy/TEDAgame/blob/master/README.md#change-the-world-1)
+
 [Make money](https://github.com/tolworthy/TEDAgame/blob/master/README.md#make-money-1)
+
 [Code overview](https://github.com/tolworthy/TEDAgame/blob/master/README.md#code-overview-1)
 
 ![TEDAgame map](http://www.tedagame.com/other/game-map.jpg)
@@ -204,10 +212,12 @@ Most variable should be in the form "let a={"name1":value1, "name2":value2}, whe
 I want the widest possible distribution for this game. So if you plan a lot of blood and sex, you might want to create your own fork of the project.
 
 
-## COME ON, EDIT THE CODE, YOU KNOW YOU WANT TO
+## COME ON, YOU KNOW YOU WANT TO
 
-And that's it. TEDAgame pursues the Holy Grail of gaming: a game that creates endless stories of exactly the kind you want, and endlessly improves. Come and join us: become rich and famous and change the world!
+So TEDAgame pursues the Holy Grail of gaming: a game that creates endless stories of exactly the kind you want, and endlessly improves. Come and join us: become rich and famous and change the world!
+
+One last thing: my Internet connection is VERY slow (kilobits per second) and I have a day job (so far!) so if you do edit it might take me a day or two to get back to you. But you will have my eternal gratitude: I've been working on this for years, in the odd hour here and there, and I am not a fast coder. So any help in coding, even just a few minutes, is gratefully received. 
 
 Thanks for reading.
 
-- Chris Tolworthy, the guy who never got over the fact that his favoruite game ended.
+- Chris Tolworthy - the guy who never got over the fact that his favoruite game ended.
