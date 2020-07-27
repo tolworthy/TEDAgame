@@ -38,7 +38,7 @@ The player explores the world. People come up to you and ask for help. That lead
 
 The endless world can be seen at http://TEDAgame.com/_NEW  (warning: early version: barely tested). It's been in development for 23 years (including four false starts), contains over 5,000 images, 50 characters, unlimited scenes above and below ground, and is designed to expand with your help.
 
-Stories are built on two simple concepts: "trap" and "trade". A trap is anything the player (or your enemy) does not want. A trade is any action that gets what you want. By building every story on the sam framework, the game will be able to mix and match elements to create new stories. Add this to user submitted stories, and the game will contain thousands of possible stories, so users can have whatever adventures they want, forever.
+Stories are built on two simple concepts: "trap" and "trade". A trap is anything the player (or your enemy) does not want. A trade is any action that gets what you want. By building every story on the same framework, the game will eventually be able to mix and match elements to create entirely new stories. So users submit stories, the game creates new variants, and users "vote" by choosing stories they like and abandoning ones they don't. And users can also improve the code, or pay others to. So the game will contain thousands of stories, and get better all the time. 
 
 ## HOW TEDAgame BEGAN
 
