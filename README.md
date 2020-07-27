@@ -8,7 +8,7 @@ Why help with TEDAgame ?
 Early version: http://www.tedagame.com/_NEW/
 
 __________________________________________
-CONTENTS
+## CONTENTS
 __________________________________________
 
 project overview
