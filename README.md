@@ -125,46 +125,46 @@ You could even use ads. Personally I don't like ads, but if you can write some c
 
 This is the TEDAgame code:
 
-c/0-variables_0.js
+[c/0-variables_0.js](https://github.com/tolworthy/TEDAgame/blob/master/c/0-variables_0.js)
 
 The main variables (and a few related functions). The most important are: active.sceneObjects (the images you see), active.queue (the events that will happen), 
 active.changes.list (changes made by the story or the user), and m.fakeRandom() (pseudo-random numbers based on the location, for populating each scene)
 
-c/1-coreFunctions_0.js
+[c/1-coreFunctions_0.js](https://github.com/tolworthy/TEDAgame/blob/master/c/1-coreFunctions_0.js)
 
 Functions used behind the scenes. The most important functions are: changeDOM (where the browser actually changes what you see on screen), NEXT_GAME_FRAME (where we read the active.queue), 
 and various references to walking (walking is more compicated than other animations)
 
-c/3-map_0.js
+[c/3-map_0.js](https://github.com/tolworthy/TEDAgame/blob/master/c/3-map_0.js)
 
 The map you can click on (top right hand corner)
 
-c/4-commands_0.js        
+[c/4-commands_0.js](https://github.com/tolworthy/TEDAgame/blob/master/c/4-commands_0.js)
 
-The commands you will normally use in a story: e.g. "enter", "dance", "climbUpCave", etc. Note the keyword "_READ_QUEUE_FRAME1". Each function is called twice: when the story says "doThis", it simply adds the word "doThis" to the queue. When the word "doThis" gets to the front of the queue, "doThis" is called again, but this time with the argument "_READ_QUEUE_FRAME1". Then stuff happens on screen.
+The commands you will normally use in a story: e.g. "enter", "dance", "climbUpCave", etc. Note the keyword "_READ_QUEUE_FRAME1"._ Each function is called twice: when the story says "doThis", it simply adds the word "doThis" to the queue. When the word "doThis" gets to the front of the queue, "doThis" is called again, but this time with the argument "_READ_QUEUE_FRAME1"._ Then stuff happens on screen.
 
-c/5-database_0.js
+[c/5-database_0.js](https://github.com/tolworthy/TEDAgame/blob/master/c/5-database_0.js)
 
 This fills the arrays full of people, names, objects, etc. You might be tempted to replace this with a proper SQL database. But keeping it pure Javascript serves two purposes: (1) It makes the game easier for unskilled users to understand and edit, and (2) It keeps the number of people and objects to a minimum. This means each person or object gets multiple uses, so develops a personality. They start to matter. It also saves time on drawing, saves time on bandwidth, etc.
 
-c/6-story_0.js
+[c/6-story_0.js](https://github.com/tolworthy/TEDAgame/blob/master/c/6-storyEvents_0.js)
 
 Story code: how it starts and ends, how to react to events, etc. Eventually this will be the heart of the game: how "trap and trade" elements can be combined to create new stories.
 
-c/7-stories_0.js    
+[c/7-stories_0.js](https://github.com/tolworthy/TEDAgame/blob/master/c/7-stories_0.js)
 
 The stories themselves,  units of "trap and trade" written in almost-natural language. This is the current focus: developing the language by slowly building the first story. Eventually this will be by far the largest part of the game. Users will be encouraged to write their own stories in this language and submit them as text files. The rest of the code will build stories from these blocks. Note: for copyright reasons, any famous story needs to be from before 1900 wherever possible. In theory, work before 1923 is usually safe, but not always if it involves a famous character.
 
-8-talk_0.js
+[c/8-talk_0.js](https://github.com/tolworthy/TEDAgame/blob/master/c/8-talk_0.js)
 
 Conversation code: This will be like Wikipedia: users can add conversation trees on any topic they find of interest. This gives characters a deeper personality.
 Also, common phrases: e.g. different ways to say hello, things to say while climbing, and so on.
 
-9-music_0.js
+[c/9-music_0.js](https://github.com/tolworthy/TEDAgame/blob/master/c/9-music_0.js)
 
-Music: Eventually, the game will select suitable music by detecting keywords. (Right now, pressing the musical note icon will merely play the first track, then the next one, etc.) Note: copyright is even more problematic on music, as you have to consider the performer as well as the composer. In general I stick to Musopen and Kevin McLeod, and will have copyright notices in the status bar or equivalent.
+Music: Eventually, the game will select suitable music by detecting keywords. Right now, pressing the musical note icon will merely play the first track, then the next one, etc. 
 
-pseudo-code.js
+[c/pseudo-code.js](https://github.com/tolworthy/TEDAgame/blob/master/c/pseudo-code.js)
 
 These are the ideas I'm working on right now: sample stories stripped down to their core elements so I can further simplify them into a universal "trap and trade" format. This will be the basis of the finished story language, the core of the game.
 folders:
@@ -181,6 +181,10 @@ i/ = images: I have drawn around 5,000, an create more as needed.
 
 PLEASE RESIST THE TEMPTATION TO "IMPROVE" THE ART. The style is deliberately rough, so that users, including non-artists, can easily add their own. "Bad" art also allows users to exaggerate details that are important. All of this enables the "bad" art to feature in more stories. More stories makes an image more interesting: sure, it's just a background object in THIS story, but maybe examining it would open up a NEW story?
 Eventually art will be compressed (probably to 4 bit quantised colour). I don't have much money for bandwidth, so size matters!
+
+m/ = music files
+
+I have not uploaded these yet, in case people use them before the copyright code is written. In general I stick to Musopen and Kevin McLeod, and will have copyright notices in the status bar (or similar) at the bottom of the game. That bar will also show other credits, for example if you want your code edits or artwork to be credited in the game.
 
 i/people/
 
