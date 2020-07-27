@@ -8,10 +8,12 @@
 
 Early version: http://www.tedagame.com/_NEW/
 
-## CONTENTS
+## CONTENTS ##
+
+[Headers](#headers)  
 
 ###### Project overview
-###### How TEDAgame began
+[ How TEDAgame began](#how-tedagame-began-1)
 ###### The road map
 ###### What we need
 ###### Can you draw?
@@ -72,7 +74,7 @@ Think what a character might spontaneously say: greetings, observations about th
 ## CAN YOU DRAW?
 
 Can you try to draw a famous location in the style of the game?
-
+![TEDAgame scenes](http://www.tedagame.com/other/game-scenes.jpg)
 The game map has 100 famous locations, but only 30 of them have fully drawn images: the rest are auto-generated. Can you draw a new background image in the same style? It doesn't have to be perfect - the style is deliberately rough. And I'll probably end up editing it a bit (don't worry, you'll get the credit). Click on any map location to see the current image. See the folder i/wall/special for examples. I drew all of those in The Gimp (free graphics software). You can use anything you like. Note that the game is nominally set in the year 1900, for copyright reasons. (As any famous story we add has to be pre-1900) It also includes ancient locations. If you draw anything newer than 1900 (e.g. skyscrapers or modern buildings) then we'll also need to create fifty or so small modern buildings so we can create a new "modern city" location style for the scenes nearby.  
 
 Can't draw? That's OK! Can you add properties to in-game objects?
