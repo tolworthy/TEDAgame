@@ -7,32 +7,20 @@ Why help with TEDAgame ?
 
 Early version: http://www.tedagame.com/_NEW/
 
-__________________________________________
 ## CONTENTS
-__________________________________________
 
-project overview
-
-how TEDAgame began
-
-the road map
-
-what we need
-
-can you draw?
-
-the biggest game in the world?
-
-change the world
-
-make money
-
-code overview
+Project overview
+How TEDAgame began
+The road map
+What we need
+Can you draw?
+The biggest game in the world?
+Change the world
+Make money
+Code overview
 
 
-__________________________________________
-PROJECT OVERVIEW
-__________________________________________
+## PROJECT OVERVIEW
 
 TEDAgame is a world of stories that anyone can edit. So it gets bigger and better forever.
 
@@ -42,16 +30,13 @@ The endless world can be seen at http://TEDAgame.com/_NEW  (warning: early versi
 
 Stories are built on two simple concepts: "trap" and "trade". A trap is anything the player (or your enemy) does not want. A trade is any action that gets what you want. By building every story on the sam framework, the game will be able to mix and match elements to create new stories. Add this to user submitted stories, and the game will contain thousands of possible stories, so users can have whatever adventures they want, forever.
 
-#HOW TEDAgame BEGAN
+## HOW TEDAgame BEGAN
 
 In 1992 I played a game that let you explore the whole world, other planets, and discover all the most interesting ideas: aliens, ancient history, telepathy, Elvis Presley, you name it. The only bad part was that the game ended. "No problem", I thought. "Adventure games are still new, this runs on a computer: computers compute things. Obviously the next game will automatically compute new locations and new stories. Isn't that what a computer is for?"  
 
 I waited five years. But nobody took that obvious next step. Nobody used the computer for what it was surely designed for. Instead, games focused on graphics and networking - as if a computer was just a new kind of television or telephone. Why aren't we using the computer to compute new ideas? After five years I gave up waiting. I decided to learn how to program, and make my own "do anything game". For the next 18 years I tried different ideas. By 2015 I cracked the problem. Since then I've worked on the game in my spare time (along with other projects). Now that the first stage is complete, it's going on Github so others can join the fun.
 
-
-__________________________________________
-THE ROAD MAP
-__________________________________________
+## THE ROAD MAP
 
 1. Endless world: DONE.
 
@@ -69,9 +54,7 @@ I am gradually working through a sample story to see what is still needed. For e
 Show users how to create their own simple stories (with no auto-creation). Then show them how to go the extra step and make stories that have variables, so one story can create hundreds of variations. Then show them how to create their own code. And offer to do it for them - sign up on Patreon and vote for the code you want, or pay us directly.
 6. So the game gets better and better forever!
 
-__________________________________________
-WHAT WE NEED
-__________________________________________
+## WHAT WE NEED
 
 I should probably keep working on the story code myself. But I would LOVE to have help with the stuff that slows me down. Can you...
 
@@ -84,9 +67,7 @@ You need to enjoy coding this! So add something you like!
 3. Add reusable conversation chunks?
 Think what a character might spontaneously say: greetings, observations about the world around them, hints do the user, etc. Anything to make the game feel more alive.
 
-__________________________________________
-CAN YOU DRAW?
-__________________________________________
+## CAN YOU DRAW?
 
 Can you try to draw a famous location in the style of the game?
 
@@ -98,9 +79,7 @@ At present, objects in the "database" file are only classified by weight, to see
 Whether you can code or not, TEDAgame needs you!
 
 
-__________________________________________
-THE BIGGEST GAME IN THE WORLD?
-__________________________________________
+## THE BIGGEST GAME IN THE WORLD?
 
 Stories appeal to all people, all ages, all interests. That is, stories have a larger potential market than, say, shoot-em-ups. So however many people buy shooting games, the potential market for a general purpose story game is even larger.
 
@@ -109,9 +88,7 @@ Users can add whatever improvements they want, and that pulls in more users. So 
 Its success and its direction depends on you. If you can make the game super easy to edit and super easy to submit new stories, then the game can be everything anybody would ever want. Why would they go elsewhere?
 
 
-__________________________________________
-CHANGE THE WORLD
-__________________________________________
+## CHANGE THE WORLD
 
 By helping with TEDAgame you get to decide the direction of what might become the world's biggest game. But it's not just a game: it's a platform for stories. If history is any guide, the most popular stories will be the classics: ancient legends, Victorian melodramas, and everything in between.
 
@@ -122,9 +99,7 @@ One more thing: TEDAgame is a more natural way to share information. If a topic 
 So you not only get to direct the world's biggest game, you get to increase culture and education around the world!
 
 
-__________________________________________
-MAKE MONEY
-__________________________________________
+## MAKE MONEY
 
 TEDAgame is based on users adding content. But lets face it: people are busy, and adding good content takes time and experience. This creates a market: some players specialise in adding content, and other players pay them. This is the business model: get a reputation as a good coder or good story writer. Maybe specialise in one kind of code or story. Then use Patreon so people who like that kind of story can pay a dollar a month to get those stories added.
 
@@ -132,10 +107,7 @@ That is my business model: I created the game, so I figure people are likely to 
 
 You could even use ads. Personally I don't like ads, but if you can write some code that only shows ads when people opt for your stuff, you can have them in TEDAgame and make your money that way. Just like Youtube: ad revenue, Patreon revenue, sell stuff, whatever. As long as people can clearly opt for the with-ads (and your content) and not-ads (so they only see stuff by ad haters like me). I'm easy going: code what you like. As the originator of TEDAgame I am mostly concerned with just building the platform. We can argue about the details AFTER we're all millionaires. :)
 
-
-__________________________________________
-CODE OVERVIEW
-__________________________________________
+## CODE OVERVIEW
 
 This is the TEDAgame code:
 
@@ -205,9 +177,7 @@ s/ = stories
 Eventually the Javascript code will only include the first story (for faster downloading). All others will be stored here, and downloaded as needed.
 
      
-__________________________________________
-#CODING RULES
-__________________________________________
+#### CODING RULES
 
 1. The "script kiddie" rule
 
@@ -229,9 +199,10 @@ Most variable should be in the form "let a={"name1":value1, "name2":value2}, whe
 
 I want the widest possible distribution for this game. So if you plan a lot of blood and sex, you might want to create your own fork of the project.
 
-_______________________________________________________________________
 
-And that's it. TEDAgame pursues the holy grail of gaming: a game that creates endless stories of exactly the kind you want, and endlessly improves. Come and join us: become rich and famous and change the world!
+## COME ON, EDIT THE CODE, YOU KNOW YOU WANT TO
+
+And that's it. TEDAgame pursues the Holy Grail of gaming: a game that creates endless stories of exactly the kind you want, and endlessly improves. Come and join us: become rich and famous and change the world!
 
 Thanks for reading.
 
