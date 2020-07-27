@@ -57,12 +57,14 @@ I waited five years. But nobody took that obvious next step. Nobody used the com
 I am gradually working through a sample story to see what is still needed. For example this story features a god character, so I had to stop to create dozens of possible god characters, then dozens of possible locations: these can be reused any time a god or god-location are needed by later stories. Next I will create the code to let the player to travel to a given location: e.g. a money system that allows them to buy tickets to travel. This will inform the syntax of the final story language. And so the development continues!
 
 4. Improve everything!
-* World: add more locations, add flying, time travel, other worlds, etc.
+* World: add more locations, add underwater, flying, space, time travel, other worlds, etc.
 * Actions: add reactions to common situations and objects
-* Language:  
+* Language: make it ever simpler and more robust, so we can eventually describe a story in general terms, and rely on the code to pull in interesting tropes.
+
 5. Release the beta version:
-Show users how to create their own simple stories (with no auto-creation). Then show them how to go the extra step and make stories that have variables, so one story can create hundreds of variations. Then show them how to create their own code. And offer to do it for them - sign up on Patreon and vote for the code you want, or pay us directly.
-6. So the game gets better and better forever!
+Show users how to create their own simple stories (with no auto-creation). Then show them how to go the extra step and make stories that have variables, so one story can create hundreds of variations. Then show them how to create their own code. And offer to do it for them - see "[make money](https://github.com/tolworthy/TEDAgame/blob/master/README.md#make-money)" below.
+
+6. So the game gets better and better forever.
 
 ## WHAT WE NEED
 
