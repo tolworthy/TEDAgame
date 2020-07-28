@@ -1,44 +1,9 @@
+// PSEUDO CODE FOR STORIES
+			// new story code needs something like this
 
-
-// TEST SPEED:
-	// can I replace ALL change code with the same format: "x#y#z#id#change#detail#detail" ?
-
-// "change" format = "x#y#z#id#change#detail#detail"
-			// x,y,z,id: optional // check of number, and if in id list
-			// e.g. "sitting#" +who	// which seat is decided by fakeRandom, so usually the same place, but mostly does not matter
-			//		"useImage#i/special/bla.png"
-			//		"hasWriting#kilroy was ere"
-// changes.list =[ {"x":0,"y":0,"z":0, "idChanges":{ "floorObj2":[change1, change2], "floorObj3":[bla,bla]}  },
-			//		  {"x":123,"y":456,"z":789, "idChanges":{ "wallObj0":[bla], "tableObj3":[bla]}  }
-			//		]
-// changes.wantToAdd =[]
-		// used by story
-				// == what items to add, and how urgent they are
-// changes.addToChanges =function(id, str){
-		// used by "sitDown" etc.
-				// == add to changes.list
-// changes.findFreeId =function(hint){
-		// used by "addThisNow" etc.
-				// ==  when adding an object, where to put it? ("hint" means "person","floorObj", etc.)
-// changes.matching
-				// == finds match in changes.list  ("matchES" finds match in sceneObjects. Different! )
-		// changes.matching.thisRoom
-				// == find the position of this room (x,y,z) in changes.list
-		// changes.matching.roomAndIdDefined
-				// == find the position of this ID in changes.list[room]
-		// changes.matching.roomAndChange
-				// == checks every ID and every change to see if a change (e.g. "sitting") is used
-		// changes.matching.roomAndChangeAndId
-				// == checks for room AND change AND ID: the precise record
-//_____________________________________________________________________________________________________________________
-
-
-
-
-
-
-//_____________________________________________________________________________________________________________________
-// story pseudocode. All stories= TRADE+TRAP. 		// Simple so it GETS DONE. And can safely automate LONG chains of events
+// "change" format: sceneX,Y,Z,id,change,detail1,detail2
+			// e.g. 123,456,789,"floor","useImage","i/special/lava-floor.gif"
+			// or 	987,654,321,"tableObj1","hasWriting","Kilroy was here""
 
 var stories ={	// wants E. Suggested sub-stories A,B, C, etc.
 	"storyName":{
@@ -266,12 +231,25 @@ function changeScene(){
 function endStory(){} // reset values to defults: e.g. wants[], own[], traps etc.
 
 /* __________________________________________________________________________________________________________________
-WHATABOUT?	horses? - this is a MORAL game. We do not enslave animals. But can make friends. So they follow you.
-			skills? - which? - this is a MORAL game. No need for barbers (cosmetic), blacksmiths (see horses) or fencers (fighting)
-			magic? - this is a MORAL game. No cheating laws of nature. Magic = simplifation of longer efforts
-			annoy people? - (ring doorbell, explode egg, burn hay). this is a MORAL game. Replace with TRADE.
-			hidden behind? - (behind cushion, inside drawer/ toolkit, etc.) no need, We have unlimited rooms and trades instead.
-			luck? - (e.g. Dr Knowall) = not good for game: game is about decisions, not luck.
+WHATABOUT?	- code I am not gong to write, but you can if you want:
+
+horses?
+			Lots of stories have horses. So feel free to add images and code for riding horses if you wish. But me? I'm a big of an animal righs guy, so in my stories I avoid treating animals as slaves. I'm just weird that way. Instead, in my stories you can make friends with animaks and they then follow you.
+
+skills?
+			Lots of stories have occupations - e.g. a person a barber, so they can cut your hair. Again, if you can find a way to make that code meaningful (how do you cut the hair on a fixed sprite?) then go ahead! But me, I'm not intersted in cosmetic stufff (grow your hair long, I don't mind). Similarly, no need for blacksmiths (see horses, above. and my preference for large wild areas so horses don't need shoes. And no need fo fighting skills, and I prefer to dialogue to fighting. but if you can find a way to add these things, that's great!
+
+magic?
+			Lots of stories have magic. But me, again it's  apreference, I like the laws of nature. So to me, magic is just a metaphr for more complex stuff.
+
+annoying people?
+			My favourite game included puzzles where yyou annoy people: keep ringing a doorbell, explode an egg in a microwave, burn hay, etc. But I don't like anoying people - I replace these with trades.
+
+hidden behind?
+			My favourite game included objects hidden behind other objects: behind a cushion, inside a drawer, ina toolkit, etc. Buit in this game there is no need: We have unlimited rooms and trades instead. So yoiu get the same experience of hunting. if I also hid stuff I think that would drive users crazy - who want to turn over ten thousand objects just in case?
+
+luck?
+ 		Lots of stories involve luck. (e.g. Grimm's fairy story "Dr Knowall"). but luck does not make an interesting game: a game should be about decisions, not "oh look, I randomly won without doing anything". Luck is here in the form of a SMALL random element in stuff, or maybe some dialog tree about the crazyness fo life.
 
 */
 
