@@ -125,6 +125,10 @@ You could even use ads. Personally I don't like ads, but if you can write some c
 
 This is the TEDAgame code:
 
+[c/ = code](https://github.com/tolworthy/TEDAgame/tree/master/c)
+
+Javascript and CSS. (index.html is in the root folder). Eventually there will also be "code/" folder for un-minified versions and zipped up images, so users can download the whole game to tinker with offline. The more copies of this game exist, the longer it will last and the more we can benefit from others' code (thanks to the GPL license)
+
 [c/0-variables_0.js](https://github.com/tolworthy/TEDAgame/blob/master/c/0-variables_0.js)
 
 The main variables (and a few related functions). The most important are: active.sceneObjects (the images you see), active.queue (the events that will happen), 
@@ -169,28 +173,25 @@ Music: Eventually, the game will select suitable music by detecting keywords. Ri
 These are the ideas I'm working on right now: sample stories stripped down to their core elements so I can further simplify them into a universal "trap and trade" format. This will be the basis of the finished story language, the core of the game.
 folders:
 
-c/ = code
-
-Javascript and CSS. (index.html is in the root folder). Eventually there will also be  "code" folder for un-minified versions and zipped up images, so users can download it all
-
-c/i/ = icons, etc.
+[c/i/ = icons, etc.](https://github.com/tolworthy/TEDAgame/tree/master/c/i)
 
 Note the world map: this is based on the "Natural Earth" projection, with a few tweaks, most noticeably for Pacific islands (to make the map rectangular) and Antarctica (to make it more rounded). Game locations are based on these pixels: 1000 inside scenes (or 100 outside scenes) per pixel.  
 
-i/ = images: I have drawn around 5,000, an create more as needed.
+[i/ = images](https://github.com/tolworthy/TEDAgame/tree/master/i)
 
-PLEASE RESIST THE TEMPTATION TO "IMPROVE" THE ART. The style is deliberately rough, so that users, including non-artists, can easily add their own. "Bad" art also allows users to exaggerate details that are important. All of this enables the "bad" art to feature in more stories. More stories makes an image more interesting: sure, it's just a background object in THIS story, but maybe examining it would open up a NEW story?
-Eventually art will be compressed (probably to 4 bit quantised colour). I don't have much money for bandwidth, so size matters!
+I have drawn over 5,000 images so far, and will create more as needed. But that all takes time, so if anybody feels like adding some in the same style, that would be wonderful! I try to make them deliberately rough so that anybody can draw them. Right now images are uncompressed but wil of course be compressed (probably 4 bit quantised) before the game goes into beta.
 
-m/ = music files
+**PLEASE RESIST THE TEMPTATION TO "IMPROVE" THE ART.** The style is deliberately rough, so that users, especially non-artists, can easily add their own. "Bad" art also allows users to exaggerate details that are important. All of this enables the "bad" art to feature in more stories. More stories makes an image more interesting: sure, it's just a background object in *this* story, but maybe examining it would open up a *new* story?
 
-I have not uploaded these yet, in case people use them before the copyright code is written. In general I stick to Musopen and Kevin McLeod, and will have copyright notices in the status bar (or similar) at the bottom of the game. That bar will also show other credits, for example if you want your code edits or artwork to be credited in the game.
+m/ = music files (not uploaded these yet)
 
-i/people/
+These are music files from Musopen and Kevin McLeod and other user friendly sources. I will not upload them until the copyright code works (on the bottom of the screen). This is because most of them require prominent attribution or they are not legal. The copyright code will also credit usrs who have submitted stories, art, code, etc.
 
-Note that talking and stretching frames are 96 pixels wide. This is a so that the game can scale in steps of 12 pixels. Without this, scaling means images can jump by a pixel, or show parts of another frame when reversed. If adding new frames please keep to 96 pixels if possible.
+[i/person/](https://github.com/tolworthy/TEDAgame/tree/master/i/person)
 
-s/ = stories
+The character sprites. Note that talking and stretching frames are 96 pixels wide. This is so that the game can scale in steps of 12 pixels. Without this, scaling means images can jump by a pixel, or show parts of another frame when reversed. If adding new frames please keep to 96 pixels if possible. Also note the gaps in the sprites. I also have versions that invldue runnign and sitting down. But both proved to not be worth the extra complexity in the code. Sitting for example means we have to push a "stand" animation *before* other code on the fly, and this created headaches. But if you can make it work then great!
+
+s/ = stories (later)
 
 Eventually the Javascript code will only include the first story (for faster downloading). All others will be stored here, and downloaded as needed.
 
