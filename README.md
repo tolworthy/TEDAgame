@@ -48,13 +48,13 @@ I waited five years. But nobody took that obvious next step. Nobody used the com
 
 ## THE ROAD MAP
 
-1. Endless world: DONE.
+1. Endless world: **DONE.**
 
-2. Common actions: DONE
+2. Common actions: **DONE.**
 (Walk, talk, pickup, climb, game start, game end, etc.)  
 
-3. Simple language for auto-generated stories. WORKING ON IT.
-I am gradually working through a sample story to see what is still needed. For example this story features a god character, so I had to stop to create dozens of possible god characters, then dozens of possible locations: these can be reused any time a god or god-location are needed by later stories. Next I will create the code to let the player to travel to a given location: e.g. a money system that allows them to buy tickets to travel. This will inform the syntax of the final story language. And so the development continues!
+3. Simple language for auto-generated stories. **WORKING ON IT.**
+I am gradually working through [the pseudo-code](https://github.com/tolworthy/TEDAgame/blob/master/c/pseudo-code.js) that will create unlimited stories. This takes a long time, especiaoly in the early stages. For example, the first simple test story is "don't eat from the tree of knowledge". A super simple story: just click the tree! Easy to code, right? But it features a god character, so I had to stop to create dozens of possible god characters, to generate variant games. And dozens of kinds of trees. And dozens of possible god locations (Eden, Olympus, etc.) And each of these needs a specialised background, which can take up to half a day to draw. The time is worth it: each location will be used in multiple future stories. Next I will create the code to let the player travel to a given location, and this need a money system to work, which needs trading, and so on. All this takes time. And I do have a day job, and this is not my only project! This is why I need your help. Anything you can do, on any part of the game, makes a big difference. 
 
 4. Improve everything!
 * World: add more locations, add underwater, flying, space, time travel, other worlds, etc.
@@ -183,10 +183,6 @@ I have drawn over 5,000 images so far, and will create more as needed. But that 
 
 **PLEASE RESIST THE TEMPTATION TO "IMPROVE" THE ART.** The style is deliberately rough, so that users, especially non-artists, can easily add their own. "Bad" art also allows users to exaggerate details that are important. All of this enables the "bad" art to feature in more stories. More stories makes an image more interesting: sure, it's just a background object in *this* story, but maybe examining it would open up a *new* story?
 
-m/ = music files (not uploaded these yet)
-
-These are music files from Musopen and Kevin McLeod and other user friendly sources. I will not upload them until the copyright code works (on the bottom of the screen). This is because most of them require prominent attribution or they are not legal. The copyright code will also credit usrs who have submitted stories, art, code, etc.
-
 [i/person/](https://github.com/tolworthy/TEDAgame/tree/master/i/person)
 
 The character sprites. Note that talking and stretching frames are 96 pixels wide. This is so that the game can scale in steps of 12 pixels. Without this, scaling means images can jump by a pixel, or show parts of another frame when reversed. If adding new frames please keep to 96 pixels if possible. Also note the gaps in the sprites. I also have versions that invldue runnign and sitting down. But both proved to not be worth the extra complexity in the code. Sitting for example means we have to push a "stand" animation *before* other code on the fly, and this created headaches. But if you can make it work then great!
@@ -195,8 +191,12 @@ s/ = stories (later)
 
 Eventually the Javascript code will only include the first story (for faster downloading). All others will be stored here, and downloaded as needed.
 
+m/ = music files (not uploaded these yet)
+
+These are music files from Musopen and Kevin McLeod and other user friendly sources. I will not upload them until the copyright code works (on the bottom of the screen). This is because most of them require prominent attribution or they are not legal. The copyright code will also credit usrs who have submitted stories, art, code, etc.
+
      
-#### CODING RULES
+#### CODING GUIDELINES
 
 1. The "script kiddie" rule
 
@@ -219,12 +219,12 @@ Most variable should be in the form "let a={"name1":value1, "name2":value2}, whe
 I want the widest possible distribution for this game. So if you plan a lot of blood and sex, you might want to create your own fork of the project.
 
 
-## COME ON, YOU KNOW YOU WANT TO
+## GO ON, EDIT SOMETHING!
 
-So TEDAgame pursues the Holy Grail of gaming: a game that creates endless stories of exactly the kind you want, and endlessly improves. Come and join us: become rich and famous and change the world!
+TEDAgame is after the Holy Grail of gaming: a game that creates endless stories, of exactly the kind you want, and that endlessly improves. Help make it happen! Become rich and famous and change the world!
 
-One last thing: my Internet connection is VERY slow (kilobits per second) and I have a day job (so far!) so if you do edit it might take me a day or two to get back to you. But you will have my eternal gratitude: I've been working on this for years, in the odd hour here and there, and I am not a fast coder. So any help in coding, even just a few minutes, is gratefully received. 
+One last thing. My Internet connection is VERY slow (kilobits per second) and I have a day job (so far!). So when you edit the code it might take me a day or two to thank you. But you *will* have my eternal gratitude. Because I am not a great coder. That's why this took 23 years to get right, and why half of it is still whgat experts call "WTF code". So any help you can give in coding, even just a few minutes, is gratefully received. And **you will be immortalised in the credits list at the bottom of the screen.**
 
 Thanks for reading.
 
-- Chris Tolworthy - the guy who never got over the fact that his favoruite game ended.
+- Chris Tolworthy (the guy who never got over the trauma when his favourite game had to end.)
