@@ -219,12 +219,28 @@ Most variable should be in the form "let a={"name1":value1, "name2":value2}, whe
 I want the widest possible distribution for this game. So if you plan a lot of blood and sex, you might want to create your own fork of the project.
 
 
-## GO ON, EDIT SOMETHING!
+## ABOUT ME, AND SOCIAL MEDIA
 
-TEDAgame is after the Holy Grail of gaming: a game that creates endless stories, of exactly the kind you want, and that endlessly improves. Help make it happen! Become rich and famous and change the world!
+My name is Chris Tolworthy, I live in a forest in Scotland, and I'm making this game because nobody makes the kind of game I want to play. Which means, I'm not really a gamer. You won't find me on gaming forums and I don't know much about games, other than every time I play them I lose interest. But I loved Zak McKracken, the game that inspired me, because I am an idealist, like David Fox who made the game. I loved the idea of a game with fractal wonder: everything that's amazing and interesting from all of time and space: an endless box of light. A game with no violence, but lots of mountains and oceans and animals and secrets and deep time, where the only enemy is stupidity. A game of endless dreams. But unlike David Fox I am not a great coder. Really I'm just an ageing childwho asks endless questions. I love philosophy and ancient history and watching squirrels in my garden. So I really hope that better coders than me might find this interesting and might put in a few hours to make it better. Any help you can give in coding, even just a few minutes, is gratefully received. And **you will be immortalised in the credits list at the bottom of the screen.**
 
-One last thing. My Internet connection is VERY slow (kilobits per second) and I have a day job (so far!). So when you edit the code it might take me a day or two to thank you. But you *will* have my eternal gratitude. Because I am not a great coder. That's why this took 23 years to get right, and why half of it is still whgat experts call "WTF code". So any help you can give in coding, even just a few minutes, is gratefully received. And **you will be immortalised in the credits list at the bottom of the screen.**
+What about social media, building a team, promoting the game, etc.?
+
+No. No. Sorry, no. No no no!! 
+
+I am mildly autistic. I don't like socialising. I love nothing better than being alone watching my oak tree grow. My Internet connection is VERY slow (kilobits per second) and I have too many other things to do, so if I seem to be ignoring your messages then I apologise. If you help to nurture the game then you have my eternal gratitude, and I will try to contact you to say thank you. But I am not a social media kind of person. And I hate advertising, on principle: if an idea is good then people will talk about it anyway. If it is not good then we should quietrly work on it until it *is* good. This takes time. Life is too fast and there are too many people on the world, consuming too much and not appreciating the value of nature. In my view.
+
+I've worked on this game in different forms since 1997. That's 23 years. I don't expect it will be worth playing for another seven years. I then plan to spend another ten years improving it, and making it good enough and simple enough that in fifty years time somebody will still play it. And maybe they will improve it for another fifty years. That's my time frame. Six years ago I planted an oak tree for the squirrls to live in, and I expect the oak tree to be fully grown before I feel the game is "finished". And then, like the oak tree, I hope the game will grow and spread after I am gone. I want to make something beautiful that will have  a life of its own. A platform for people and stories and ideas. This cannot be rushed. 
+
+![TEDAgame scenes](http://www.tedagame.com/other/game-goal.jpg)
+
+So, no I will not be paying Facebook money to promote the game. I will not be networking, other than putting this on github and mentioning it occasionally. I would rather spend my time looking out of the window at the crow who just walked by. Or thinking about the cosmos and our place in it. Or filling the game with the things that inspire me: classic novels, world mythology, ancient history, ecological economics and nature. And I hope that you will want to add whatever inspires you as well. 
+
+
+## GO ON, EDIT SOMETHING
+
+TEDAgame is (hopefully) the Holy Grail of gaming: a game that inspires endless stories, of exactly the kind you want, and that endlessly improves. You can help make it happen. And if you want, become rich and famous and change the world.
+
 
 Thanks for reading.
 
-- Chris Tolworthy (the guy who never got over the trauma when his favourite game had to end.)
+- Chris (the guy who never got over the trauma when his favourite game had to end.)
