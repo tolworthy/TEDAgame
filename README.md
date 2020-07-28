@@ -28,6 +28,8 @@ Early version: http://www.tedagame.com/_NEW/
 
 [Code overview](https://github.com/tolworthy/TEDAgame/blob/master/README.md#code-overview)
 
+[About me, and social media](https://github.com/tolworthy/TEDAgame/#about-me-and-social-media)
+
 ![TEDAgame map](http://www.tedagame.com/other/game-map.jpg)
 
 ## PROJECT OVERVIEW
