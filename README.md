@@ -117,7 +117,7 @@ So you not only get to direct the world's biggest game, you get to increase cult
 
 ## MAKE MONEY
 
-TEDAgame is based on users adding content. But lets face it: people are busy, and adding good content takes time and experience. This creates a market: some players specialise in adding content, and other players pay them. This is the business model: get a reputation as a good coder or good story writer. Maybe specialise in one kind of code or story. Then use Patreon so people who like that kind of story can pay a dollar a month to get those stories added.
+TEDAgame is based on users adding content. But let's face it, people are busy, and adding good content takes time and experience. This creates a market: some players specialise in adding content, and other players pay them. This is the business model: get a reputation as a good coder or good story writer. Maybe specialise in one kind of code or story. Then use Patreon so people who like that kind of story can pay a dollar a month to get those stories added.
 
 That is my business model: I created the game, so I figure people are likely to trust me to add content. If a few hundred players give a couple of dollars a month each via Patreon,  that starts to look like a viable income. Personally, I like ancient stories and interesting ideas, so that's the kind of thing I am most likely to add. Maybe you like coding shoot-em-ups, so your followers will pay you to add that functionality? Maybe you're great at writing dialogue, and you create a character who says funny stuff? You could release a new story each month, a kind of soap opera in game form! Maybe you care passionately about some cause or hobby and others do too? TEDAgame is not a single story game: it's a platform for anything you want.
 
